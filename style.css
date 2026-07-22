@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.text-cyan { color: #00e5ff; }
+.cyan-text { color: #00e5ff; }
+.text-light-muted { color: #cccccc; }
+
+.custom-nav {
+    background-color: #121212;
+    border-bottom: 1px solid #222;
+    padding: 15px 0;
+}
+.nav-logo {
+    max-height: 150px; 
+    width: auto;
+    object-fit: contain;
+}
+.custom-nav .nav-link {
+    color: #ffffff !important;
+    font-weight: 500;
+    font-size: 25px;
+    padding: 8px 15px !important;
+}
+.custom-nav .nav-link:hover {
+    color: #00e5ff !important;
+}
+
+/* Resume Button Design */
+.btn-resume {
+    background-color: #00e5ff;
+    color: #121212 !important;
+    font-weight: 600;
+    border-radius: 4px;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s ease;
+}
+.btn-resume:hover {
+    background-color: #00b2cc;
+    transform: translateY(-2px);
+}
+
+.hero-section {
+    min-height: calc(100vh - 110px);
+    padding: 60px 0;
+}
+.main-title {
+    font-size: 54px;
+    font-weight: 800;
+    color: #00e5ff;
+    margin-top: 10px;
+}
+.subtitle {
+    font-size: 18px;
+    color: #cccccc;
+    font-weight: 500;
+}
+.description {
+    color: #aaaaaa;
+    max-width: 600px;
+    line-height: 1.6;
+}
+.social-hero a {
+    text-decoration: none;
+}
+.social-hero i {
+    font-size: 24px;
+    color: #00e5ff;
+    transition: 0.3s;
+}
+.social-hero i:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+}
+.profile-img {
+    border-radius: 8px;
+    max-height: 450px;
+    object-fit: cover;
+    box-shadow: 0px 10px 30px rgba(0, 229, 255, 0.1);
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* Portfolio Section */
+.portfolio-section {
+    padding: 80px 0;
+}
+.project-box {
+    background-color: #1a1a1a;
+    border: 1px solid #2d2d2d;
+    border-radius: 8px;
+    padding: 30px;
+    max-width: 950px;
+}
+.project-img {
+    width: 100%;
+    height: 288px;
+    object-fit: cover; 
+    cursor: pointer;
+}
+.project-details h3 {
+    font-size: 26px;
+    color: #00e5ff;
+    margin-bottom: 15px;
+}
+.project-details h3 a i {
+    font-size: 20px;
+    transition: 0.2s;
+}
+.project-details h3 a i:hover {
+    color: #ffffff;
+}
+.project-details p {
+    color: #dddddd;
+    font-size: 14px;
+}
+.project-details ul {
+    padding-left: 20px;
+    color: #bbbbbb;
+    font-size: 14px;
+}
+.project-details ul li {
+    margin-bottom: 5px;
+}
+.tech-tags span, .tags-container span {
+    display: inline-block;
+    background-color: #2d3238;
+    color: #e2e8f0;
+    padding: 5px 12px;
+    margin: 4px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/* Skills Section */
+.skills-section {
+    padding: 80px 0;
+    background-color: #161616;
+}
+.skill-category {
+    margin-bottom: 25px;
+}
+.skill-category h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+.edu-title {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 80px 0;
+}
+.contact-box {
+    max-width: 550px;
+    background-color: #1a1a1a;
+    border: 1px solid #2d2d2d;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+.custom-input {
+    background-color: transparent !important;
+    border: 1px solid #444 !important;
+    color: #fff !important;
+    border-radius: 4px;
+    padding: 12px;
+}
+.custom-input::placeholder {
+    color: #666;
+}
+.custom-input:focus {
+    border-color: #00e5ff !important;
+    box-shadow: none !important;
+}
+.btn-send {
+    background-color: #2d3238;
+    color: #00e5ff;
+    font-weight: 600;
+    padding: 12px;
+    border: 1px solid #444;
+    transition: 0.3s;
+}
+.btn-send:hover {
+    background-color: #00e5ff;
+    color: #121212;
+}
+
+/* Footer */
+.footer {
+    background-color: #0d0d0d;
+    padding: 40px 0;
+    border-top: 1px solid #1a1a1a;
+}
+.footer-icons a {
+    font-size: 20px;
+    color: #00e5ff;
+}
+.footer-icons a:hover {
+    color: #fff;
+}
+
+@media (max-width: 991px) {
+    .main-title { font-size: 40px; }
+    .education-box { text-align: left !important; margin-top: 40px; }
+}
